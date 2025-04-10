@@ -1,0 +1,91 @@
+{
+    "case_name": "test_02_add_device_index",
+    "run_time": "20220928 14:17:30",
+    "test_type": "FirstTest",
+    "case_doc": "\u6dfb\u52a0\u5b8c\u8bbe\u5907\uff0c\u9996\u9875\u786e\u5b9a\u8bbe\u5907\u5b58\u5728",
+    "success": false,
+    "failures": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 32, in testPartExecutor\n    yield\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/Users/isentech/Desktop/python/miniu_test/minitest.py\", line 36, in test_02_add_device_index\n    self.assertEqual(devices_sum,1)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/assertbase.py\", line 354, in _hook_assert\n    return attr(*args, **kwargs)\n  File \"/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py\", line 33, in _patched_equals\n    old(self, first, second, msg)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 845, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 838, in _baseAssertEqual\n    raise self.failureException(msg)\nAssertionError: 0 != 1\n",
+    "errors": "",
+    "start_timestamp": 1664345850.359122,
+    "is_failure": true,
+    "is_error": false,
+    "module": ".Users.isentech.Desktop.python.miniu_test.minitest",
+    "package": "minitest",
+    "failed_line_num": 36,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.24.7",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AssertionError",
+    "error_value": "0 != 1",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertEqual",
+            "ret": false,
+            "msg": "0 != 1"
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1664345860.7222369,
+    "appId": "wx4edb84a4d287c7e3",
+    "appName": "\u9014\u9e70",
+    "source": {
+        "code": [
+            "    def test_02_add_device_index(self):\n",
+            "        \"\"\"\u6dfb\u52a0\u5b8c\u8bbe\u5907\uff0c\u9996\u9875\u786e\u5b9a\u8bbe\u5907\u5b58\u5728\"\"\"\n",
+            "        self.page.wait_for(2)\n",
+            "        self.page.get_element(\"/page/view/view[3]/view[1]/view[1]/view/view/view/view/view/view/view[1]/input\").input(de.device_mac_01)\n",
+            "        self.page.get_element(\"/page/view/view[3]/view[1]/view[2]/view/view/view/view/view/view/view/input\").input(de.device_name_01)\n",
+            "        self.page.get_element(\"/page/view/view[3]/view[2]/button\").click()\n",
+            "        self.page.get_element(\"/page/view/view[3]/view[4]/button\").click()\n",
+            "        self.app.go_home(\"/pages/index/index\")\n",
+            "        devices_sum=len(self.page.get_elements(\"/page/view/view[3]/view[1]/view[1]/view/view/view/view/view/view/view[1]/input\"))\n",
+            "        self.assertEqual(devices_sum,1)\n"
+        ],
+        "start": 27
+    },
+    "filename": "result.json"
+}

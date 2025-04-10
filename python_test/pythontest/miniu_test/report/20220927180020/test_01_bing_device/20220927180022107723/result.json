@@ -1,0 +1,86 @@
+{
+    "case_name": "test_01_bing_device",
+    "run_time": "20220927 18:00:22",
+    "test_type": "FirstTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 32, in testPartExecutor\n    yield\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/Users/isentech/Desktop/python/miniu_test/minitest.py\", line 22, in test_01_bing_device\n    self.assertEqual(page,\"/pagesDevice/addDevice/addDevice\")\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/assertbase.py\", line 354, in _hook_assert\n    return attr(*args, **kwargs)\n  File \"/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py\", line 33, in _patched_equals\n    old(self, first, second, msg)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 845, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/assertbase.py\", line 354, in _hook_assert\n    return attr(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 1226, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 675, in fail\n    raise self.failureException(msg)\nAssertionError: '/pages/index/index' != '/pagesDevice/addDevice/addDevice'\n- /pages/index/index\n+ /pagesDevice/addDevice/addDevice\n\n",
+    "errors": "",
+    "start_timestamp": 1664272822.1087391,
+    "is_failure": true,
+    "is_error": false,
+    "module": ".Users.isentech.Desktop.python.miniu_test.minitest",
+    "package": "minitest",
+    "failed_line_num": 22,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.24.7",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "AssertionError",
+    "error_value": "'/pages/index/index' != '/pagesDevice/addDevice/addDevice'\n- /pages/index/index\n+ /pagesDevice/addDevice/addDevice\n",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertEqual",
+            "ret": false,
+            "msg": "'/pages/index/index' != '/pagesDevice/addDevice/addDevice'\n- /pages/index/index\n+ /pagesDevice/addDevice/addDevice\n"
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1664272823.222264,
+    "appId": "wx4edb84a4d287c7e3",
+    "appName": "\u9014\u9e70",
+    "source": {
+        "code": [
+            "    def test_01_bing_device(self):\n",
+            "        page=self.page.path\n",
+            "\n",
+            "\n",
+            "        self.assertEqual(page,\"/pagesDevice/addDevice/addDevice\")\n"
+        ],
+        "start": 18
+    },
+    "filename": "result.json"
+}

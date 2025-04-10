@@ -1,0 +1,92 @@
+{
+    "case_name": "test_01_bing_device",
+    "run_time": "20220927 16:36:02",
+    "test_type": "FirstTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1664267762.926982,
+    "is_failure": false,
+    "is_error": false,
+    "module": ".Users.isentech.Desktop.python.miniu_test.minitest",
+    "package": "minitest",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "screenWidth": 424,
+            "phoneCalendarAuthorized": true,
+            "windowHeight": 856,
+            "bluetoothEnabled": false,
+            "language": "zh_CN",
+            "microphoneAuthorized": true,
+            "fontSizeScaleFactor": 1,
+            "locationAuthorized": true,
+            "notificationAuthorized": true,
+            "model": "MEIZU 18",
+            "statusBarHeight": 38,
+            "safeArea": {
+                "width": 424,
+                "right": 424,
+                "top": 38,
+                "left": 0,
+                "bottom": 942,
+                "height": 904
+            },
+            "brand": "meizu",
+            "windowWidth": 424,
+            "locationEnabled": true,
+            "benchmarkLevel": 33,
+            "screenHeight": 942,
+            "abi": "arm64-v8a",
+            "version": "8.0.28",
+            "cameraAuthorized": true,
+            "deviceAbi": "arm64-v8a",
+            "system": "Android 11",
+            "fontSizeSetting": 16,
+            "pixelRatio": 2.55,
+            "deviceOrientation": "portrait",
+            "wifiEnabled": true,
+            "screenTop": 86,
+            "platform": "android",
+            "SDKVersion": "2.26.1",
+            "enableDebug": false,
+            "devicePixelRatio": 2.55,
+            "host": {
+                "env": "WeChat",
+                "version": 671095865
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertEqual",
+            "ret": true,
+            "msg": null
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1664267775.602487,
+    "appId": "wx4edb84a4d287c7e3",
+    "appName": "\u9014\u9e70",
+    "source": {
+        "code": [
+            "    def test_01_bing_device(self):\n",
+            "        page=self.page.path\n",
+            "\n",
+            "\n",
+            "        self.assertEqual(page,\"/pagesDevice/addDevice/addDevice\")\n"
+        ],
+        "start": 17
+    },
+    "filename": "result.json"
+}

@@ -1,0 +1,26 @@
+ERROR 2022-09-27 18:10:01,222 assertbase.py _teardown_collect 273 <bound method FirstTest.test_01_bing_device of <minitest.FirstTest testMethod=test_01_bing_device>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 32, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/isentech/Desktop/python/miniu_test/minitest.py", line 23, in test_01_bing_device
+    self.assertEqual(page,"/pagesDevice/addDevice/addDevice")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/assertbase.py", line 354, in _hook_assert
+    return attr(*args, **kwargs)
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/teamcity/diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/assertbase.py", line 354, in _hook_assert
+    return attr(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: '/pages/index/index' != '/pagesDevice/addDevice/addDevice'
+- /pages/index/index
++ /pagesDevice/addDevice/addDevice
+

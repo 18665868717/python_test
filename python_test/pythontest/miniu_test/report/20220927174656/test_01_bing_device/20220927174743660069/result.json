@@ -1,0 +1,92 @@
+{
+    "case_name": "test_01_bing_device",
+    "run_time": "20220927 17:47:43",
+    "test_type": "FirstTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1664272063.660921,
+    "is_failure": false,
+    "is_error": false,
+    "module": ".Users.isentech.Desktop.python.miniu_test.minitest",
+    "package": "minitest",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "screenWidth": 424,
+            "phoneCalendarAuthorized": true,
+            "windowHeight": 835,
+            "bluetoothEnabled": true,
+            "language": "zh_CN",
+            "microphoneAuthorized": true,
+            "fontSizeScaleFactor": 1,
+            "locationAuthorized": true,
+            "notificationAuthorized": true,
+            "model": "IN2010",
+            "statusBarHeight": 42,
+            "safeArea": {
+                "width": 424,
+                "right": 424,
+                "top": 42,
+                "left": 0,
+                "bottom": 926,
+                "height": 884
+            },
+            "brand": "OnePlus",
+            "windowWidth": 424,
+            "locationEnabled": true,
+            "benchmarkLevel": 30,
+            "screenHeight": 926,
+            "abi": "arm64-v8a",
+            "version": "8.0.27",
+            "cameraAuthorized": true,
+            "deviceAbi": "arm64-v8a",
+            "system": "Android 12",
+            "fontSizeSetting": 16,
+            "pixelRatio": 2.55,
+            "deviceOrientation": "portrait",
+            "wifiEnabled": true,
+            "screenTop": 91,
+            "platform": "android",
+            "SDKVersion": "2.26.2",
+            "enableDebug": true,
+            "devicePixelRatio": 2.55,
+            "host": {
+                "env": "WeChat",
+                "version": 671095641
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [
+        {
+            "name": "assertEqual",
+            "ret": true,
+            "msg": null
+        }
+    ],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1664272143.185178,
+    "appId": "wx4edb84a4d287c7e3",
+    "appName": "\u9014\u9e70",
+    "source": {
+        "code": [
+            "    def test_01_bing_device(self):\n",
+            "        page=self.page.path\n",
+            "\n",
+            "\n",
+            "        self.assertEqual(page,\"/pagesDevice/addDevice/addDevice\")\n"
+        ],
+        "start": 18
+    },
+    "filename": "result.json"
+}

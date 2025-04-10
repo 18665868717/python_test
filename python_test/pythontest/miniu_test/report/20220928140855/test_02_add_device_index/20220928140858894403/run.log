@@ -1,0 +1,11 @@
+ERROR 2022-09-28 14:09:02,425 assertbase.py _teardown_collect 273 <bound method FirstTest.test_02_add_device_index of <minitest.FirstTest testMethod=test_02_add_device_index>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 32, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/isentech/Desktop/python/miniu_test/minitest.py", line 29, in test_02_add_device_index
+    self.page.get_element("/page/view/view[3]/view[1]/view[1]/view/view/view/view/view/view/view[1]/input").input(de.device_mac)
+AttributeError: module 'device_config' has no attribute 'device_mac'

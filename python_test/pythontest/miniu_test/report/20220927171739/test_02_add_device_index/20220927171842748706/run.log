@@ -1,0 +1,31 @@
+ERROR 2022-09-27 17:19:49,134 assertbase.py _teardown_collect 273 <bound method FirstTest.test_02_add_device_index of <minitest.FirstTest testMethod=test_02_add_device_index>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 32, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/isentech/Desktop/python/miniu_test/minitest.py", line 26, in test_02_add_device_index
+    self.page.get_element("/page/view/view[3]/view[1]/view[1]/view/view/view/view/view/view/view[1]/input").input(de.device_mac)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 200, in get_element
+    return self.get_element_by_xpath(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 385, in get_element_by_xpath
+    el = search_element()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/utils/utils.py", line 35, in wrapper
+    r = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 383, in search_element
+    return self._get_element_by_xpath(xpath)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 537, in _get_element_by_xpath
+    ret = self._send("Page.getElementByXpath", {"selector": xpath})
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 405, in _send
+    return self.connection.send(method, params) if sync else self.connection.send_async(method, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/connection.py", line 185, in send
+    return self._receive_response(cmd)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/connection.py", line 215, in _receive_response
+    raise MiniTimeoutError(
+minium.framework.exception.MiniTimeoutError: [call Page.getElementByXpath] receive from remote timeout, id: 8eb4bd5c-c1e2-4d30-85e6-db080214454f

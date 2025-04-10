@@ -1,0 +1,83 @@
+{
+    "case_name": "test_08_auto_add_device",
+    "run_time": "20220928 14:18:01",
+    "test_type": "FirstTest",
+    "case_doc": "\u81ea\u52a8\u6dfb\u52a0\u8bbe\u5907\uff0c\u5224\u65ad\u662f\u5426\u80fd\u6b63\u5e38\u8fdb\u5165\u81ea\u52a8\u6dfb\u52a0\u8bbe\u5907\u9875\u9762",
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 32, in testPartExecutor\n    yield\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py\", line 118, in run\n    self._callTestMethod(testMethod)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py\", line 549, in _callTestMethod\n    method()\n  File \"/Users/isentech/Desktop/python/miniu_test/minitest.py\", line 69, in test_08_auto_add_device\n    self.page.get_element('//*[@id=\"showUi\"]/button').click()\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py\", line 135, in wrapper\n    result = func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py\", line 200, in get_element\n    return self.get_element_by_xpath(\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py\", line 135, in wrapper\n    result = func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py\", line 387, in get_element_by_xpath\n    raise MiniElementNotFoundError(\"element[%s] not found\" % xpath)\nminium.framework.exception.MiniElementNotFoundError: element[//*[@id=\"showUi\"]/button] not found\n",
+    "start_timestamp": 1664345881.82767,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".Users.isentech.Desktop.python.miniu_test.minitest",
+    "package": "minitest",
+    "failed_line_num": 69,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.24.7",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "MiniElementNotFoundError",
+    "error_value": "element[//*[@id=\"showUi\"]/button] not found",
+    "error_stages": [
+        "testMethod"
+    ],
+    "screen_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1664345887.147143,
+    "appId": "wx4edb84a4d287c7e3",
+    "appName": "\u9014\u9e70",
+    "source": {
+        "code": [
+            "    def test_08_auto_add_device(self):\n",
+            "        \"\"\"\u81ea\u52a8\u6dfb\u52a0\u8bbe\u5907\uff0c\u5224\u65ad\u662f\u5426\u80fd\u6b63\u5e38\u8fdb\u5165\u81ea\u52a8\u6dfb\u52a0\u8bbe\u5907\u9875\u9762\"\"\"\n",
+            "        self.page.wait_for(2)\n",
+            "        self.page.get_element('//*[@id=\"showUi\"]/button').click()\n",
+            "        self.page.get_element('//*[@id=\"menuList\"]/view[1]').click()\n",
+            "        page=self.page.path\n",
+            "        self.assertEqual(page,'/pagesDevice/smartAddDevice/smartAddDevice')\n",
+            "        self.app.navigate_to('/pages/device/device')\n"
+        ],
+        "start": 66
+    },
+    "filename": "result.json"
+}

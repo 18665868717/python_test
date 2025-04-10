@@ -1,0 +1,20 @@
+ERROR 2022-09-28 18:50:49,062 connection.py _receive_response 206 [0527ac5d-c0cb-4c99-ac2a-f441f23c1d5d]: no such element
+ERROR 2022-09-28 18:50:50,620 assertbase.py _teardown_collect 273 <bound method FirstTest.test_06_click_historical_track of <minitest.FirstTest testMethod=test_06_click_historical_track>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 32, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/framework/libs/unittest/case.py", line 118, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/isentech/Desktop/python/miniu_test/minitest.py", line 53, in test_06_click_historical_track
+    self.page.get_element('//*[@id="devicePopup"]/view[7]/view[2]').click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 200, in get_element
+    return self.get_element_by_xpath(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/minium/miniprogram/base_driver/page.py", line 387, in get_element_by_xpath
+    raise MiniElementNotFoundError("element[%s] not found" % xpath)
+minium.framework.exception.MiniElementNotFoundError: element[//*[@id="devicePopup"]/view[7]/view[2]] not found
