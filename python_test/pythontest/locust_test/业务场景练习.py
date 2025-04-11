@@ -108,17 +108,22 @@ URL="https://tuying.mncats365.com/webApi/login?phoneNum=18665868717&pass=123456"
 
 host_id = "https://tuying.mncats365.com"
 
-class User_test(HttpUser):
-    host=host_id
-    wait_time = between(1, 2)
-    subtype= ""
-
+token=""
 class longin_test(TaskSet):
     #只做登录
-    @task
+    @
     def do_nothing(self):
         subtype="logign"
         path="/webApi/login"
-        rep=self.client.get(url=host_id+path,params={"phoneNum":18665868717,"pass":123456}).json()
+        rep=self.client.get(url=path,params={"phoneNum":18665868717,"pass":111111},name="登录").json()
         print(rep)
+
+    @task
+    def test_cat_devices(self):
+        path="device/findByUserId"
+        self.client.post(url=path,data={})
+class User_test(HttpUser):
+    tasks = [longin_test]
+    host= "https://tuying.mncats365.com"
+    wait_time = between(1, 2)
 
