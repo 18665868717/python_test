@@ -106,9 +106,10 @@ URL="https://tuying.mncats365.com/webApi/login?phoneNum=18665868717&pass=123456"
 #             "method": "credit"
 #         })
 
-URL="https://tuying.mncats365.com"
+
 
 class User_test(HttpUser):
+    host = "https://tuying.mncats365.com"
     wait_time = between(1, 2)
     subtype= ""
 
@@ -116,4 +117,4 @@ class longin_test(User_test):
     #只做登录
     @task
     def do_nothing(self):
-        self.client.get(url=URL,params={"phoneNum":18665868717,"pass":123456})
+        self.client.get(url=URL,params={"phoneNum":18665868717,"pass":123456}).json()
