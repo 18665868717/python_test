@@ -1,4 +1,4 @@
-from locust import HttpUser, task, between
+from locust import HttpUser, task, between, TaskSet
 import random
 import csv
 import queue
@@ -106,15 +106,19 @@ URL="https://tuying.mncats365.com/webApi/login?phoneNum=18665868717&pass=123456"
 #             "method": "credit"
 #         })
 
-
+host_id = "https://tuying.mncats365.com"
 
 class User_test(HttpUser):
-    host = "https://tuying.mncats365.com"
+    host=host_id
     wait_time = between(1, 2)
     subtype= ""
 
-class longin_test(User_test):
+class longin_test(TaskSet):
     #只做登录
     @task
     def do_nothing(self):
-        self.client.get(url=URL,params={"phoneNum":18665868717,"pass":123456}).json()
+        subtype="logign"
+        path="/webApi/login"
+        rep=self.client.get(url=host_id+path,params={"phoneNum":18665868717,"pass":123456}).json()
+        print(rep)
+
