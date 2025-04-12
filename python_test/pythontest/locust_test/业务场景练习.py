@@ -1,7 +1,7 @@
-from locust import HttpUser, task, between, TaskSet
-import random
-import csv
-import queue
+# from locust import HttpUser, task, between, TaskSet
+# import random
+# import csv
+# import queue
 
 URL="https://tuying.mncats365.com/webApi/login?phoneNum=18665868717&pass=123456"
 
@@ -105,23 +105,35 @@ URL="https://tuying.mncats365.com/webApi/login?phoneNum=18665868717&pass=123456"
 #             "order_id": random.randint(5000, 6000),
 #             "method": "credit"
 #         })
+from locust import HttpUser, task, between, TaskSet
+from queue import LifoQueue
 
-host_id = "https://tuying.mncats365.com"
+token=LifoQueue()
 
-token=""
 class longin_test(TaskSet):
+
     #只做登录
-    @
-    def do_nothing(self):
+    @task(1)
+    def do_login(self):
         subtype="logign"
         path="/webApi/login"
         rep=self.client.get(url=path,params={"phoneNum":18665868717,"pass":111111},name="登录").json()
-        print(rep)
+        token.put(rep["data"]["token"])
+        print(rep["data"]["token"])
 
-    @task
-    def test_cat_devices(self):
-        path="device/findByUserId"
-        self.client.post(url=path,data={})
+
+    @task(1)
+    def on_cat_devices(self):
+        try:
+            token_value = token.get_nowait() # 非阻塞方式获取 token
+            print(f"Token: {token_value}")
+            path = "/device/findByUserId"
+            rep = self.client.post(url=path, data={"token": token_value}, name="查看设备").json()
+            print(rep)
+        except :
+            print("没有 token")
+
+
 class User_test(HttpUser):
     tasks = [longin_test]
     host= "https://tuying.mncats365.com"
