@@ -1,6 +1,11 @@
-list=[('u',9),('p',7)]
-list1=[[1,2,3],[4,5,6]]
-for i ,j  in list:
-    print(i,j)
-for m,n,b in list1:
-    print(m,n,b)
+import concurrent.futures
+txt_list=[1,2,3,4,5,6,7,8]
+def te_print(va):
+    print(va)
+
+def print_with_thread_pool(txt_list):
+    with concurrent.futures.ThreadPoolExecutor() as pool:
+        pool.map(te_print, txt_list)
+
+if __name__ == '__main__':
+    print_with_thread_pool(txt_list)
