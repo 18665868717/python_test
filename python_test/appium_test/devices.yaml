@@ -1,0 +1,26 @@
+- desc: 设备_9黑色
+  port: 4723
+  des:
+    platformName: Android
+    deviceName: 496ba836
+    udid: 6dfb7045
+    platformVersion: 11
+    appPackage: com.isen.macimsihdml
+    appActivity: com.isentech.macimsihdml.ui.StartActivity t68
+    noReset: !!bool True    #强制转换数据类型
+    unicodeKeyboard: !!bool True
+    resetKeyboard: !!bool True
+
+- desc: 设备9R
+  port: 4725
+  des:
+    platformName: Android
+    deviceName: emulator-5554
+    udid: eed52e18
+    platformVersion: 11
+    appPackage: com.isen.macimsihdml
+    appActivity: com.isentech.macimsihdml.ui.StartActivity t68
+    noReset: !!bool True
+    unicodeKeyboard: !!bool True
+    resetKeyboard: !!bool True
+
