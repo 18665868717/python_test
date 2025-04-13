@@ -33,5 +33,5 @@ def login_with_thread_pool(accounts):
 # 示例用法
 if __name__ == '__main__':
 
-    accounts = load_accounts_from_excel('../locust_test/USER_INFO.xlsx')
+    accounts = load_accounts_from_excel('USER_INFO.xlsx')
     login_with_thread_pool(accounts)
