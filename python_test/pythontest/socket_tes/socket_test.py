@@ -35,7 +35,7 @@ import time
 # #     ip = '192.168.1.142'
 # #     nm = nmap.PortScanner()
 # #     nm.scan(ip, '80, 445', '-v -n -sS -T4 -Pn')
-# #     print(nm.command_line())
+# #     print(nm.command_line.txt())
 # #     print(nm.scaninfo())
 # #     print(nm.all_hosts())
 # #     print(nm[ip])

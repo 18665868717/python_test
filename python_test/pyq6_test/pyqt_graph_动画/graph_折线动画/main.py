@@ -1,14 +1,13 @@
 import sys
 import PyQt5.QtWidgets as qw
-from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtCore import QTimer
 import pyqt_graph
 import pyqtgraph as pg
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QMainWindow, QGraphicsView, QGraphicsScene, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QVBoxLayout
 import random
 
 
-class mymain(qw.QMainWindow,pyqt_graph.Ui_MainWindow):
+class mymain(qw.QMainWindow, pyqt_graph.Ui_MainWindow):
 
     def __init__(self):
         super().__init__()
