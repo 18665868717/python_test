@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/device/softwareUpdate"
+  Type: get
+  statusMsg: "发送成功"

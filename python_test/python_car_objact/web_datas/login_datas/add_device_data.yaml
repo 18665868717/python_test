@@ -1,0 +1,36 @@
+-
+  device_number: " "
+  device_name: 正式设备
+  result: "设备编号长度有误（12位）"
+  status: 1
+
+-
+  device_number: "94E686016AD"
+  device_name: 正式设备
+  result: "设备编号长度有误（12位）"
+  status: 1
+
+-
+  device_number: "94E686016AD4"
+  device_name: " "
+  result: "设备编号/名称不能为空"
+  status: 3
+
+-
+  device_number: "FFFFFFFFFFFF"
+  device_name: 正式设备
+  result: "设备未入库"
+  status: 3
+
+-
+  device_number: "94E686016AD4"
+  device_name: 正式设备
+  result: "添加设备成功"
+  status: 3
+
+-
+  device_number: "94E686016AD4"
+  device_name: 正式设备
+  result: "设备已绑定, 请勿重复绑定"
+  status: 3
+

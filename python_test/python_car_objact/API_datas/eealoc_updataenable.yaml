@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/eeaLoc/updateEnable"
+  Type: put
+  statusMsg: "围栏启用状态修改成功"

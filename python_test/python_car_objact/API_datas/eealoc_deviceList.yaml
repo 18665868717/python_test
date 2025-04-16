@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/eeaLoc/deviceList"
+  Type: get
+  statusMsg: "获取成功"

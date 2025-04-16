@@ -1,0 +1,20 @@
+-
+  url: "https://tuyingtest.mncats365.com/user/updateAlertFlag"
+  Type: put
+  data:
+    dismantleAlertFlag: 0
+    lowPowerAlertFlag: 0
+    moveAlertFlag: 0
+    eeaAlertFlag: 0
+    subscribeFlag: 0
+  statusMsg: "修改成功"
+-
+  url: "https://tuyingtest.mncats365.com/user/updateAlertFlag"
+  Type: put
+  data:
+    dismantleAlertFlag: 1
+    lowPowerAlertFlag: 1
+    moveAlertFlag: 1
+    eeaAlertFlag: 1
+    subscribeFlag: 1
+  statusMsg: "修改成功"

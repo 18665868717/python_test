@@ -1,0 +1,14 @@
+-
+  url: "https://tuyingtest.mncats365.com/user/update"
+  Type: put
+  data:
+    smsFlag: 1
+  statusMsg: "修改成功"
+
+-
+  url: "https://tuyingtest.mncats365.com/user/update"
+  Type: put
+  data:
+    smsFlag: 0
+  statusMsg: "修改成功"
+

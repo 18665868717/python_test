@@ -1,0 +1,35 @@
+-
+  name: ""
+  phone_number: 18665868717
+  status: 1
+  result: "请输入通知人姓名"
+
+-
+  name: "李鹏"
+  phone_number: ""
+  status: 2
+  result: "请输入您的账号"
+
+-
+  name: "李鹏"
+  phone_number: "1866586871"
+  status: 2
+  result: "账号长度有误"
+
+-
+  name: "李鹏"
+  phone_number: "11111111111"
+  status: 2
+  result: "账号格式有误"
+
+-
+  name: "李鹏"
+  phone_number: "18665868717"
+  status: 3
+  result: "添加成功"
+
+-
+  name: "李鹏"
+  phone_number: "18665868717"
+  status: 3
+  result: "该手机号已添加"

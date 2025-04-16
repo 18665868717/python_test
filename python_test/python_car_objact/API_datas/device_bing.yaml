@@ -1,0 +1,36 @@
+-
+  url: "https://tuyingtest.mncats365.com/device/bind"
+  Type: post
+  data:
+    imei: "94E686016AF8"
+    name: ""
+  statusMsg: "设备编号/名称不能为空"
+-
+  url: "https://tuyingtest.mncats365.com/device/bind"
+  Type: post
+  data:
+    imei: ""
+    name: "全是老6"
+  statusMsg: "设备编号/名称不能为空"
+-
+  url: "https://tuyingtest.mncats365.com/device/bind"
+  Type: post
+  data:
+    imei: "94E686016AF"
+    name: "全是老6"
+  statusMsg: "设备未入库"
+-
+  url: "https://tuyingtest.mncats365.com/device/bind"
+  Type: post
+  data:
+    imei: "94E686016AF8"
+    name: "全是老6"
+  statusMsg: "添加成功"
+
+-
+  url: "https://tuyingtest.mncats365.com/device/bind"
+  Type: post
+  data:
+    imei: "94E686016B1C"
+    name: "曹贼哪里跑"
+  statusMsg: "添加成功"

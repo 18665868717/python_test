@@ -1,0 +1,8 @@
+-
+  url: "https://tuyingtest.mncats365.com/alert/findList"
+  Type: post
+  data:
+    "deviceId": 106
+    "currentPage": 1
+    "pageSize": 9999
+  statusMsg: "查询成功"

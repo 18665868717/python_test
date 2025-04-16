@@ -1,0 +1,10 @@
+#  查询设备列表
+-
+  url: 'https://tuyingtest.mncats365.com/devm/findDevices'
+  Type: post
+  data:
+    currenPage: 1
+    pageSize: 10
+  statusMsg: "查询成功"
+
+

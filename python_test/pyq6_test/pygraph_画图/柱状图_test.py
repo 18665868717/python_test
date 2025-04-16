@@ -64,4 +64,4 @@ def update_data(frame):
 ani = animation.FuncAnimation(fig, update_data, frame=range(1, 100), interval=1000)
 
 plt.show()
-使用matplotlib画柱状图，X轴刻度10，Y轴刻度100，然后每间隔1秒读取列表第一个值并实时显示，下一秒左移一个刻度并且再次读取列表的第一个值并实时显示
+#使用matplotlib画柱状图，X轴刻度10，Y轴刻度100，然后每间隔1秒读取列表第一个值并实时显示，下一秒左移一个刻度并且再次读取列表的第一个值并实时显示

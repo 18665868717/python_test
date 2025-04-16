@@ -1,0 +1,5 @@
+#选择录音时长30S
+-
+  url:  "https://tuyingtest.mncats365.com/audio/beginAudio"
+  Type: get
+  statusMsg: "发送成功"

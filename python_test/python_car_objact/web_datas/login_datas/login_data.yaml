@@ -1,0 +1,20 @@
+-
+  username: "18665868717"
+  password: ""
+  result: "账号或密码输入有误!"
+-
+  username: ""
+  password: "123456"
+  result: "账号或密码输入有误!"
+-
+  username: "18665868717"
+  password: "11111111"
+  result: "帐号或密码输入有误"
+-
+  username: "18665868719"
+  password: "111111"
+  result: "手机号未注册"
+-
+  username: "18665868717"
+  password: "111111"
+  result: "登录成功"

@@ -1,0 +1,23 @@
+-
+  url: "https://tuyingtest.mncats365.com/contacts/add"
+  Type: post
+  data:
+    name: ""
+    mobilePhone: ""
+  statusMsg: "参数错误"
+
+-
+  url: "https://tuyingtest.mncats365.com/contacts/add"
+  Type: post
+  data:
+    name: "诸位该回上届了"
+    mobilePhone: ""
+  statusMsg: "参数错误"
+
+-
+  url: "https://tuyingtest.mncats365.com/contacts/add"
+  Type: post
+  data:
+    name: "诸位该回上届了"
+    mobilePhone: "18665868717"
+  statusMsg: "添加成功"

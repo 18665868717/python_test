@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/eeaLoc/addDeviceToEeaLocs"
+  Type: put
+  statusMsg: "围栏批量添加成功"

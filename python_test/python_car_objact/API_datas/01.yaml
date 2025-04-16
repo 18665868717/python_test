@@ -1,0 +1,5 @@
+host_dict:
+  host: 192.168.178.1
+  prot: 50
+  username: llll
+  pwd: 123456

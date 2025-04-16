@@ -1,0 +1,55 @@
+-
+  radius: 199
+  setting: 2
+  fence_name: "测试围栏名称001"
+  result: "围栏半径范围在200~1000000之间"
+
+-
+  radius: 1000001
+  setting: 2
+  fence_name: "测试围栏名称002"
+  result: "围栏半径范围在200~1000000之间"
+
+-
+
+  radius: ""
+  setting: 2
+  fence_name: "测试围栏名称002"
+  result: "围栏半径范围在200~1000000之间"
+-
+
+  radius: 200
+  setting: 2
+  fence_name: "测试围栏名称003"
+  result: "添加成功！"
+-
+
+  radius: 200
+  setting: 1
+  fence_name: "测试围栏名称004"
+  result: "添加成功！"
+-
+
+  radius: 200
+  setting: 3
+  fence_name: "测试围栏名称005"
+  result: "添加成功！"
+-
+
+  radius: 200
+  setting: 0
+  fence_name: "测试围栏名称005"
+  result: "至少选择一个告警！"
+
+-
+
+  radius: 200
+  setting: 2
+  fence_name: " "
+  result:  "添加成功！"
+-
+  radius: 200
+  setting: 2
+  fence_name: "测试围栏名称003"
+  result: "围栏名称已存在"
+
