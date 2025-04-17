@@ -1,0 +1,15 @@
+-
+  url: "https://tuyingtest.mncats365.com/deviceSetting/addOrUpdate"
+  Type: post
+  data:
+    deviceId: 106
+    imei: "94E686016B1C"
+    deviceType: 0
+    deviceName:  "94E686016B1C"
+    runType: 0
+    sleepType: 0
+    sleepTime: 30
+    batteryCapacity: 975
+    status: 4
+    expireTime: 0
+    apptype: "GPSV2"

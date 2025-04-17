@@ -1,0 +1,11 @@
+-
+  url: "https://tuyingtest.mncats365.com/deviceSetting/changeTrackMode"
+  Type: post
+  data:
+    deviceId: 106
+    trackMode: 2
+    trackTimeOut: 600
+    trackLocTime: 10
+    trackMaxLocTime: 600
+    iBeacon: 1
+    wifiProbe: 1

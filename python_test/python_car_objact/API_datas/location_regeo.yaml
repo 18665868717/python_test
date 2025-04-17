@@ -1,0 +1,16 @@
+-
+  rul: "https://tuyingtest.mncats365.com/location/regeo"
+  lat: 22.647603
+  lon: 114.017193
+  statusMsg: "查询成功"
+-
+  rul: "https://tuyingtest.mncats365.com/location/regeo"
+  lat: 22.647603
+  lon: ""
+  statusMsg: "请求方式/参数类型不匹配"
+
+-
+  rul: "https://tuyingtest.mncats365.com/location/regeo"
+  lat: ""
+  lon: 114.017193
+  statusMsg: "请求方式/参数类型不匹配"

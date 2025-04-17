@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/audio/removeDeviceAudios"
+  Type: put
+  statusMsg: '录音批量移除成功'

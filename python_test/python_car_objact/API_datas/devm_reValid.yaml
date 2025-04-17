@@ -1,0 +1,22 @@
+-
+  url: 'https://tuyingtest.mncats365.com/devm/reValid'
+  Type: put
+  param:
+    type: 1
+    token: '238620'
+  data:
+    idList:
+    - 107
+    - 106
+  statusMsg: "处理成功"
+-
+  url: 'https://tuyingtest.mncats365.com/devm/reValid'
+  Type: put
+  param:
+    type: 0
+    token: '238620'
+  data:
+    idList:
+    - 107
+    - 106
+  statusMsg: "处理成功"

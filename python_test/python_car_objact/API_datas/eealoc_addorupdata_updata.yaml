@@ -1,0 +1,48 @@
+#添加围栏，进/出围栏触发警报，进入围栏设备保持开机
+- url: https://tuyingtest.mncats365.com/eeaLoc/addOrUpdate
+  Type: post
+  data:
+    id: 801
+    type: 0
+    name: 上芬围栏测试
+    location: 上芬[地铁站]
+    lon: 113.9916940000319
+    lat: 22.66813000002515
+    radius: 200
+    deviceIdList: ''
+    inEeaShutdown: 0
+  statusMsg: 更新围栏成功
+
+#添加围栏，进围栏触发警报，进入围栏下发设备关机指令
+- url: https://tuyingtest.mncats365.com/eeaLoc/addOrUpdate
+  Type: post
+  data:
+    id: 801
+    type: 1
+    name: 龙华围栏测试
+    location: 龙华[地铁站]
+    lon: 114.017556
+    lat: 22.654549
+    radius: 300
+    deviceIdList: ''
+    inEeaShutdown: 1
+  statusMsg: 更新围栏成功
+
+#添加围栏，出围栏触发警报，进入围栏下发设备关机指令
+- url: https://tuyingtest.mncats365.com/eeaLoc/addOrUpdate
+  Type: post
+  data:
+    id: 801
+    type: 2
+    name: 清湖围栏测试
+    location: 清湖[地铁站]
+    lon: 114.031584
+    lat: 22.666736
+    radius: 500
+    deviceIdList: ''
+    inEeaShutdown: 0
+  statusMsg: 更新围栏成功
+
+
+
+

@@ -1,0 +1,8 @@
+-
+  url: 'https://tuyingtest.mncats365.com/device/findByUserId'
+  Type: post
+  statusMsg: "查询成功"
+-
+  url: 'https://tuyingtest.mncats365.com/device/findByUserId'
+  Type: post
+  statusMsg: "查询成功"

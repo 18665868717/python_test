@@ -1,0 +1,8 @@
+-
+  url: "https://tuyingtest.mncats365.com/share/invitation"
+  Type: post
+  data:
+    usersPhone:
+    - 17512046196
+    deviceId: 106
+  statusMsg: "发送邀请成功"

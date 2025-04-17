@@ -1,0 +1,16 @@
+-
+  content: ""
+  result: True
+-
+  content: "正式"
+  result: True
+
+-
+  content: "设备"
+  result: True
+-
+  content: "式设"
+  result: True
+-
+  content: "不存在的设备名称"
+  result: True

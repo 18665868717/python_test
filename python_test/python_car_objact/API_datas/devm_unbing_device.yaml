@@ -1,0 +1,6 @@
+-
+  url: "https://tuyingtest.mncats365.com/devm/unBind"
+  Type: PUT
+  data:
+    idList:
+    - 107

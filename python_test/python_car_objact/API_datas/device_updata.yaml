@@ -1,0 +1,11 @@
+-
+  url: 'https://tuyingtest.mncats365.com/device/update'
+  Type: put
+  data:
+    id: 107
+    name: "全是老6"
+    carNumber: "楚：好几个8"
+    carColor: "五颜六色"
+    remark: "一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十"
+    apptype: "GPSV2"
+  statusMsg: "修改成功"

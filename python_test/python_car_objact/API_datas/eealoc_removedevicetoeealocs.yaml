@@ -1,0 +1,4 @@
+-
+  url: "https://tuyingtest.mncats365.com/eeaLoc/removeDeviceToEeaLocs"
+  Type: put
+  statusMsg: "围栏批量移除成功"
