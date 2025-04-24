@@ -6,12 +6,12 @@ app =QApplication(sys.argv)
 
 window=QWidget()
 window.show()
-window.resize(500,500)
+window.resize(600,600)
 window.move(300,300)
 
 
 #总控件的个数
-widget_count= 20
+widget_count= 9
 #一行有多少控件
 column_count = 3
 #计算一个控件的宽度
@@ -26,7 +26,7 @@ for i in range(0,widget_count):
     widget_x = i % column_count * widget_width
     widget_y = i // column_count * widget_height
     w.move(widget_x,widget_y)
-    w.setStyleSheet("background-color: red;border: 1px solid yellow;")
+    w.setStyleSheet("background-color: gray;border: 10px solid white;")
     w.show()
 
 sys.exit(app.exec())
