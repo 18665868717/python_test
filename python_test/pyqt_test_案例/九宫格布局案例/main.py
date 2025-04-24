@@ -78,7 +78,7 @@ class ImageGrid(QWidget):
                     vbox = QVBoxLayout()
                     label_img = QLabel()
                     pixmap = QPixmap(img_path)
-                    label_img.setPixmap(pixmap.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+                    label_img.setPixmap(pixmap.scaled(150, 150, Qt.KeepAspectRatio, Qt.SmoothTransformation))
                     label_img.setAlignment(Qt.AlignCenter)
 
                     label_text = QLabel(text)
